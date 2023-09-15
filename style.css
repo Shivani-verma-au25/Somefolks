@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+:root{
+    --text-color:#bfea88;
+    --small-text-color:#bee987;
+    --bg-color:#192928;
+    --bg-sec-color:#622d21;
+    --sec-text-color:#a45543;
+    --third-text-color:#fbdcc6;
+    --extrs-small-text:#ac9882;
+    --bg-frth-bg:#9e9882;
+    --bg-5color:#bcab99;
+    --text-5color:#964141;
+    --big-text-color:#f10034;
+}
+#main{
+
+}
+
+/* *********** page1***************** */
+#page1{
+    width: 100vw;
+    height: 100vh;
+    background-color: rebeccapurple;
+    position: relative;
+}
+.image-div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.image-div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #00000084;
+    position: absolute;
+    top: 0;
+}
+nav{
+    width: 100%;
+    height: 25%;
+    background-color: palevioletred;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-left{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+}
+#nav-center{
+    width: 60%;
+    height: 100%;
+    background-color: pink;
+}
+#nav-right{
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
+}
+#hero{
+    width: 100%;
+    height: calc(100% - 25%);
+    background-color: #622d21;
+    position: relative;
+}
+#hero-top{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: #9e9882;
+}
+#hero-bottom{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: #bee987;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero-btm-lft{
+    width: 25%;
+    height: 100%;
+    background-color: rebeccapurple;
+}
+#hero-btm-center{
+    width: 50%;
+    height: 100%;
+    background-color: palevioletred;
+}
+#hero-btm-ryt{
+    width: 25%;
+    height: 100%;
+    background-color: rebeccapurple;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-div-ryt{
+    width: 90%;
+    height: 75%;
+    background-color: peru;
+    position: relative;
+    border-radius: .4vw;
+    overflow: hidden;
+}
+.img-div-ryt>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0;
+}
+/* ********* page2 ************ */
+#page2{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
