@@ -1,3 +1,24 @@
+@font-face {
+    font-family: a;
+    src: url(./63273dbbf8acefbabe7185b2_PPEditorialNew-Ultralight.ttf);
+}
+@font-face {
+    font-family: b;
+    src: url(./632afdbf585e19218f2c06e3_PPMori-Book.ttf);
+}
+@font-face {
+    font-family: c;
+    src: url(./648f091032f94fd8cc8ba44c_Arges-NormalHeavy.ttf);
+}
+@font-face {
+    font-family: d;
+    src: url(./648f0bfec67475da7bef8fec_Arges-NormalBold.ttf);
+}
+@font-face {
+    font-family: e;
+    src: url(./6490b65d6f10b24bc0356438_Blackstone.ttf);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -9,7 +30,7 @@ html,body{
 }
 
 :root{
-    --text-color:#bfea88;
+    --text-color:#a3c478;
     --small-text-color:#bee987;
     --bg-color:#192928;
     --bg-sec-color:#622d21;
@@ -29,7 +50,7 @@ html,body{
 #page1{
     width: 100vw;
     height: 100vh;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     position: relative;
 }
 .image-div{
@@ -53,7 +74,7 @@ html,body{
 nav{
     width: 100%;
     height: 25%;
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
     position: relative;
     display: flex;
     align-items: center;
@@ -62,35 +83,66 @@ nav{
 #nav-left{
     width: 20%;
     height: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
+}
+.small-text{
+    width: 100%;
+    height: 30%;
+    /* background-color: red; */
+    font-size: 1.2vw;
+    font-family: b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--small-text-color);
+}
+.big-text{
+    width: 100%;
+    height: 70%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5.3vw;
+    font-family: c;
+    text-transform: uppercase;
+    color: var(--small-text-color);
 }
 #nav-center{
     width: 60%;
     height: 100%;
-    background-color: pink;
+    /* background-color: pink;     */
+    color: var(--small-text-color);
+}
+#nav-center>h2{
+    font-size: 2vw;
+    font-family: c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #nav-right{
     width: 20%;
     height: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 #hero{
     width: 100%;
     height: calc(100% - 25%);
-    background-color: #622d21;
+    /* background-color: #622d21; */
     position: relative;
 }
 #hero-top{
     width: 100%;
     height: 50%;
     position: relative;
-    background-color: #9e9882;
+    /* background-color: #9e9882; */
 }
 #hero-bottom{
     width: 100%;
     height: 50%;
     position: relative;
-    background-color: #bee987;
+    /* background-color: #bee987; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,17 +150,56 @@ nav{
 #hero-btm-lft{
     width: 25%;
     height: 100%;
-    background-color: rebeccapurple;
+     /* background-color: yellow; */ 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:3vw 
+}
+.inner-hero-btn-top{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2vw
 }
 #hero-btm-center{
     width: 50%;
     height: 100%;
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:.3vw
+}
+#hero-btm-center>h3{
+    font-family: c;
+    font-size: 2vw;
+    color: var(--small-text-color);
+}
+#hero-btm-center>h2{
+    font-family: c;
+    font-size: 4vw;
+    color: var(--text-color);
+}
+#hero-btm-center>p{
+    font-family: a;
+    font-size: .7vw;
+    width: 80%;
+    color: var(--text-color);
+    /* letter-spacing: .1vw; */
+}
+#hero-btm-center>p>span{
+    font-family: b;
+    font-size: 1vw;
+    color: var(--small-text-color);
+    font-family: 600;
 }
 #hero-btm-ryt{
     width: 25%;
     height: 100%;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     position: relative;
     display: flex;
     align-items: center;
@@ -117,7 +208,7 @@ nav{
 .img-div-ryt{
     width: 90%;
     height: 75%;
-    background-color: peru;
+    /* background-color: peru; */
     position: relative;
     border-radius: .4vw;
     overflow: hidden;
