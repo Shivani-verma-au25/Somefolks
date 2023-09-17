@@ -67,7 +67,7 @@ html,body{
 .overlay{
     width: 100%;
     height: 100%;
-    background-color: #00000084;
+    background-color: #000000a5;
     position: absolute;
     top: 0;
 }
@@ -84,29 +84,40 @@ nav{
     width: 20%;
     height: 100%;
     /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .small-text{
     width: 100%;
-    height: 30%;
+    height: 10%;
     /* background-color: red; */
-    font-size: 1.2vw;
-    font-family: b;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     color: var(--small-text-color);
+    padding: 0 1.2vw;
+}
+.small-text>h3{
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    font-family: b;
 }
 .big-text{
     width: 100%;
-    height: 70%;
+    height: 80%;
     /* background-color: green; */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 5.3vw;
+    align-items: flex-start;
+    justify-content: flex-start;
     font-family: c;
     text-transform: uppercase;
     color: var(--small-text-color);
+    padding: 0 1.2vw;
+}
+.big-text>h1{
+    font-size: 5.4vw;
 }
 #nav-center{
     width: 60%;
@@ -125,6 +136,46 @@ nav{
     width: 20%;
     height: 100%;
     /* background-color: yellow; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.small-text-right{
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: var(--small-text-color);
+    padding: 0 1.2vw;
+}
+.small-text-right>h3{
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    font-family: b;
+}
+.big-text-right{
+    width: 100%;
+    height: 80%;
+    /* background-color: green; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-family: c;
+    text-transform: uppercase;
+    color: var(--small-text-color);
+    padding: 0 1.2vw;
+}
+.big-text>h1{
+    font-size: 5.4vw;
+}
+#nav-right>.small-text>h3{
+    margin-left: 10vw;
+}
+#nav-right>.big-text>h1{
+    margin-left: 9.1vw;
 }
 #hero{
     width: 100%;
@@ -132,15 +183,16 @@ nav{
     /* background-color: #622d21; */
     position: relative;
 }
+
 #hero-top{
     width: 100%;
-    height: 50%;
+    height: 60%;
     position: relative;
     /* background-color: #9e9882; */
 }
 #hero-bottom{
     width: 100%;
-    height: 50%;
+    height: 40%;
     position: relative;
     /* background-color: #bee987; */
     display: flex;
@@ -206,22 +258,83 @@ nav{
     justify-content: center;
 }
 .img-div-ryt{
-    width: 90%;
-    height: 75%;
+    width: 75%;
+    height: 65%;
     /* background-color: peru; */
     position: relative;
     border-radius: .4vw;
     overflow: hidden;
 }
-.img-div-ryt>img{
+#hero-btm-ryt>h2{
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    z-index: 1;
+    /* background-color: rebeccapurple; */
+    width: fit-content;
+    font-size: 3vw;
+    letter-spacing: 1.vw;
+    font-family: c;
+    color: var(--small-text-color);
+}
+#hero-btm-ryt>p{
+    position: absolute;
+    bottom: 25%;
+    left: 16%;
+    z-index: 1;
+    font-size: 1.1vw;
+    font-family: e;
+    width: fit-content;
+    font-family: c;
+    color: var(--small-text-color);
+}
+.img-div-ryt>video{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 0;
+    transition: all .335s ease;
+}
+.img-div-ryt>video:hover{
+    scale: 1.1;
 }
 /* ********* page2 ************ */
 #page2{
     width: 100vw;
     height: 100vh;
     background-color: red;
+}
+
+
+
+/* *************** media queries ***************/
+@media (max-width:500px) {
+    #page1{
+        width: 100%;
+        max-height: 100%;
+    }
+    #nav-left>.small-text {
+        display: none;
+    }
+    #nav-left>.big-text{
+        height:100%;
+    }
+    #nav-left>.big-text>h1{
+       font-size: 12.4vw;
+    }
+    #nav-right>.small-text-right {
+        display: none;
+    }
+    #nav-right>.big-text-right {
+        height: 100%;
+    }
+    #nav-right>.big-text-right>h1 {
+        font-size: 12.4vw;
+    }
+    .image-div>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 }
