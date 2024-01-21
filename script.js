@@ -29,3 +29,12 @@ function loco(){
   ScrollTrigger.refresh();
   }
   loco()
+
+
+// page text animation
+
+let text = document.querySelector('.text>h1')
+
+
+
+

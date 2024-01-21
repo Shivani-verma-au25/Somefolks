@@ -1,8 +1,8 @@
-/* *************** media queries ***************/
-/* @media (max-width:500px) {
+/* *************** media queries **************
+@media (max-width:500px) {
     #page1{
         width: 100%;
-        height: 100%;
+        max-height: 100%;
     }
     #nav-left>.small-text {
         display: none;
@@ -21,5 +21,11 @@
     }
     #nav-right>.big-text-right>h1 {
         font-size: 12.4vw;
-    } */
-/* } */
+    }
+    .image-div>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+} */
