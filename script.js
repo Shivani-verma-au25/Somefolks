@@ -33,7 +33,72 @@ function loco(){
 
 // page text animation
 
-let text = document.querySelector('.text>h1')
+gsap.from(".text",{
+  y:80,
+  duration:2,
+  stagger:2,
+  delay:1.1,
+  scrollTrigger:{
+    trigger:'.text',
+    scroller:"#main",
+    scrub:2
+  }
+})
+gsap.from(".smal-text-p2",{
+  y:50,
+  // duration:2,
+  stagger:.25,
+  scrollTrigger:{
+    trigger:".smal-text-p2",
+    scroller:"#main",
+    scrub:3
+  }
+})
+
+
+// image animation center pic
+
+let tl1 = gsap.timeline()
+
+tl1.from(".pic>img",{
+  x : -50,
+  stagger:.20,
+  scrollTrigger:{
+    trigger:".pic>img",
+    scroller:"#main",
+    // markers:true,
+    start:"30% 50%",
+    end:"30% 40%",
+    scrub:2
+  }
+})
+tl1.from(".pic>img",{
+  x : 10,
+  y:-15,
+  stagger:.20,
+  scrollTrigger:{
+    trigger:".pic>img",
+    scroller:"#main",
+    // markers:true,
+    start:"50% 90%",
+    end:"50% 70%",
+    scrub:2
+  }
+})
+tl1.from(".pic",{
+  y:70,
+  x:-10,
+  scale:1.2,
+  stagger:.20,
+  scrollTrigger:{
+    trigger:".pic>img",
+    scroller:"#main",
+    // markers:true,
+    start:"70% 90%",
+    end:"70% 70%",
+    scrub:2
+  }
+})
 
 
 
